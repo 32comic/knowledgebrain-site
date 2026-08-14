@@ -1,0 +1,86 @@
+:root {
+  --bg: #f7f5f2;
+  --card: #fff;
+  --text: #1c1917;
+  --muted: #57534e;
+  --line: #e7e5e4;
+  --accent: #1d4ed8;
+}
+* { box-sizing: border-box; }
+html { color-scheme: light; }
+body {
+  margin: 0;
+  font: 17px/1.7 "SF Pro Text", "PingFang SC", "Hiragino Sans", "Noto Sans CJK", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+header {
+  border-bottom: 1px solid var(--line);
+  background: var(--card);
+}
+.wrap {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem 3rem;
+}
+.brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.brand a { color: inherit; text-decoration: none; font-weight: 650; }
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 0.92rem;
+}
+.nav a:hover, .nav a[aria-current="page"] { color: var(--accent); }
+.langs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1rem 0 1.5rem;
+}
+.langs button {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.85rem;
+}
+.langs button[aria-pressed="true"] {
+  background: #1c1917;
+  color: #fff;
+  border-color: #1c1917;
+}
+h1 { font-size: 1.65rem; line-height: 1.3; margin: 0 0 0.35rem; }
+.meta { color: var(--muted); margin: 0 0 1.5rem; }
+h2 { font-size: 1.15rem; margin: 1.75rem 0 0.5rem; }
+p, li { color: #292524; }
+ul { padding-left: 1.2rem; }
+a { color: var(--accent); }
+.card-list { list-style: none; padding: 0; }
+.card-list li {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  margin: 0 0 0.75rem;
+  padding: 1rem 1.1rem;
+}
+.card-list a { font-weight: 650; text-decoration: none; }
+.card-list p { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.95rem; }
+footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+[hidden] { display: none !important; }
