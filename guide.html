@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KnowledgeBrain Guide — How to use</title>
+  <meta name="description" content="Beginner's guide to KnowledgeBrain: capture content, ask your knowledge base questions, set up an API key, sync and export.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap brand">
+      <a href="index.html">KnowledgeBrain</a>
+      <nav class="nav">
+        <a href="guide.html" aria-current="page">Guide</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" data-set-lang="en">English</button>
+      <button type="button" data-set-lang="zh-Hans">简体中文</button>
+      <button type="button" data-set-lang="zh-Hant">繁體中文</button>
+      <button type="button" data-set-lang="ja">日本語</button>
+    </div>
+
+    <section data-lang-panel="en">
+      <h1>Beginner's guide</h1>
+      <p class="meta">No account needed. Five minutes and you'll know your way around.</p>
+
+      <h2>1. First launch: the four tabs</h2>
+      <p>KnowledgeBrain works right away — no sign-up. The bottom bar has four tabs:</p>
+      <ul>
+        <li><strong>Ask</strong> — chat with your knowledge base.</li>
+        <li><strong>Capture</strong> — put new content in.</li>
+        <li><strong>Library</strong> — browse and search everything you've saved.</li>
+        <li><strong>Settings</strong> — AI provider, iCloud sync, export.</li>
+      </ul>
+
+      <h2>2. Put content in (Capture)</h2>
+      <div class="shots">
+        <img class="guide" src="screenshots/en/04-capture.png" alt="The Capture tab" loading="lazy">
+      </div>
+      <p>Open the <strong>Capture</strong> tab and pick whichever fits:</p>
+      <ol>
+        <li><strong>Type a note</strong> — write in the "Quick note" box at the top, then tap <strong>Save</strong>.</li>
+        <li><strong>Voice memo</strong> — tap <strong>Start recording</strong>, talk, tap stop. Your speech is transcribed into text right on your phone.</li>
+        <li><strong>Files</strong> — tap <strong>Files (PDF/EPUB/MD/TXT)</strong> and pick a document from the Files app. Great for papers and e-books.</li>
+        <li><strong>Photo text (OCR)</strong> — tap <strong>Photo library (OCR)</strong> to turn text in a picture into a searchable note.</li>
+        <li><strong>Obsidian</strong> — tap <strong>Obsidian Vault folder</strong> to import an existing vault in one go.</li>
+        <li><strong>From other apps</strong> — in Safari or any app, tap the system <strong>Share</strong> button and choose <strong>KnowledgeBrain</strong>. Saved in one tap.</li>
+      </ol>
+      <p class="tip">Everything you save is automatically summarized, tagged and made searchable in the background. Just keep collecting.</p>
+
+      <h2>3. Ask questions (Ask)</h2>
+      <div class="shots">
+        <img class="guide" src="screenshots/en/03-chat.png" alt="Asking a question" loading="lazy">
+        <img class="guide" src="screenshots/en/06-citation-detail.png" alt="Tapping a citation shows the original passage" loading="lazy">
+      </div>
+      <ol>
+        <li>Open the <strong>Ask</strong> tab and type your question in the box at the bottom — plain language is fine.</li>
+        <li>The answer is built from <em>your</em> library. At the bottom of each answer you'll see chips like <strong>[1] RAG notes</strong>.</li>
+        <li>Tap a chip to see the exact original passage the answer came from — so you can always verify.</li>
+        <li>The speaker icon reads the answer aloud; the copy icon copies it.</li>
+      </ol>
+
+      <h2>4. Find things (Library)</h2>
+      <p>The <strong>Library</strong> tab lists everything you've saved. The search box at the top is a <strong>semantic search</strong>: type the rough meaning (for example "that article about databases") and it will find it — no need to remember exact words. Tap any entry to read the full text.</p>
+
+      <h2>5. Optional: connect a cloud AI (your own API key)</h2>
+      <p>On devices with Apple Intelligence, answers can be generated fully on-device and you can skip this. Otherwise, or if you want stronger answers, bring your own key:</p>
+      <ol>
+        <li>Get an API key from a provider's website (e.g. DeepSeek, Zhipu, Kimi — it's like a password for their AI service).</li>
+        <li>In KnowledgeBrain go to <strong>Settings → Cloud API → Add configuration</strong>.</li>
+        <li>Pick your provider, paste the <strong>API Key</strong>, and choose a <strong>model</strong> (the list loads automatically once the key is in).</li>
+        <li>Tap <strong>Test connection</strong> — when it says success, tap <strong>Save</strong>.</li>
+        <li>Back in the list, tap the configuration to make it active (green checkmark).</li>
+      </ol>
+      <p class="tip">Your key is stored in the iOS Keychain and is only ever sent to the provider you configured. Usage is billed by your provider, not by us.</p>
+
+      <h2>6. Sync and backup</h2>
+      <ul>
+        <li><strong>Sync between devices</strong> — your library syncs automatically through your private iCloud. In <strong>Settings → iCloud sync</strong> you can also tap <strong>Sync now (full)</strong>. Note: AI configurations are not synced, set them up per device.</li>
+        <li><strong>Export / backup</strong> — in Settings, tap <strong>Export Markdown to iCloud Drive</strong> to get all your notes as plain Markdown files. Your knowledge is never locked in.</li>
+      </ul>
+
+      <h2>FAQ</h2>
+      <ul class="card-list">
+        <li><strong>Do I need an account?</strong><p>No. Open the app and start using it.</p></li>
+        <li><strong>Does it work offline?</strong><p>Browsing, searching and capturing work offline. Cloud AI answers need internet; on-device AI (Apple Intelligence) does not.</p></li>
+        <li><strong>Can the developer see my notes?</strong><p>No. Data lives on your devices and in your private iCloud database, which the developer cannot access.</p></li>
+        <li><strong>Is my API key safe?</strong><p>It's stored in the system Keychain and sent only to the provider you chose.</p></li>
+        <li><strong>Which languages does the app speak?</strong><p>English, 简体中文, 繁體中文 and 日本語 — it follows your iPhone's language.</p></li>
+      </ul>
+
+      <p>Still stuck? Email <a href="mailto:info@pixelart.tech">info@pixelart.tech</a>.</p>
+    </section>
+
+    <section data-lang-panel="zh-Hans" hidden>
+      <h1>新手使用教学</h1>
+      <p class="meta">不用注册账号,五分钟就能上手。</p>
+
+      <h2>1. 第一次打开:认识四个标签页</h2>
+      <p>KnowledgeBrain 装好后直接就能用,不需要注册。底部有四个标签:</p>
+      <ul>
+        <li><strong>问答</strong>——和你的知识库聊天。</li>
+        <li><strong>收集</strong>——把新内容放进来。</li>
+        <li><strong>库</strong>——浏览和搜索你存过的所有内容。</li>
+        <li><strong>设置</strong>——AI 提供方、iCloud 同步、导出。</li>
+      </ul>
+
+      <h2>2. 把内容放进来(收集)</h2>
+      <div class="shots">
+        <img class="guide" src="screenshots/zh-Hans/04-capture.png" alt="收集标签页" loading="lazy">
+      </div>
+      <p>打开<strong>收集</strong>标签,哪种方便用哪种:</p>
+      <ol>
+        <li><strong>打字记录</strong>——在顶部「快速记录」框里写,写完点<strong>保存</strong>。</li>
+        <li><strong>语音速记</strong>——点<strong>开始录音</strong>,说完点停止。语音会自动在手机上转成文字。</li>
+        <li><strong>导入文件</strong>——点<strong>文件 (PDF/EPUB/MD/TXT)</strong>,从「文件」App 里选文档,适合论文和电子书。</li>
+        <li><strong>图片识字(OCR)</strong>——点<strong>相册图片 (OCR)</strong>,把照片里的文字变成可搜索的笔记。</li>
+        <li><strong>Obsidian 用户</strong>——点<strong>Obsidian Vault 文件夹</strong>,整个库一次导入。</li>
+        <li><strong>从别的 App 收藏</strong>——在 Safari 或任何 App 里点系统<strong>分享</strong>按钮,选 <strong>KnowledgeBrain</strong>,一键保存。</li>
+      </ol>
+      <p class="tip">存进来的内容会自动生成摘要、打上标签并建立搜索索引。只管往里收,剩下的交给它。</p>
+
+      <h2>3. 开口提问(问答)</h2>
+      <div class="shots">
+        <img class="guide" src="screenshots/zh-Hans/03-chat.png" alt="向知识库提问" loading="lazy">
+        <img class="guide" src="screenshots/zh-Hans/06-citation-detail.png" alt="点引用标记可查看原文" loading="lazy">
+      </div>
+      <ol>
+        <li>打开<strong>问答</strong>标签,在底部输入框里写下你的问题——大白话就行。</li>
+        <li>答案是基于<strong>你自己的</strong>知识库生成的。每个答案末尾都有 <strong>[1] RAG 技术调研</strong> 这样的来源标记。</li>
+        <li>点一下来源标记,就能看到答案依据的原文段落——随时可以核对。</li>
+        <li>答案下方的喇叭图标可以朗读,旁边的图标可以复制。</li>
+      </ol>
+
+      <h2>4. 找东西(库)</h2>
+      <p><strong>库</strong>标签里列出了你存的所有内容。顶部的搜索框是<strong>语义搜索</strong>:输入大概意思(比如「那篇讲数据库的文章」)就能找到,不用记住原话。点任意条目可以看全文。</p>
+
+      <h2>5. 可选:接入云端 AI(自己的 API Key)</h2>
+      <p>在支持 Apple Intelligence 的设备上,答案可以完全在本机生成,这步可以跳过。其他情况,或者想要更强的回答,可以接入自己的 Key:</p>
+      <ol>
+        <li>先去服务商官网申请一个 API Key(比如 DeepSeek、智谱、Kimi——可以理解成调用他们 AI 服务的密码)。</li>
+        <li>在 KnowledgeBrain 里进入<strong>设置 → 云端 API → 添加配置</strong>。</li>
+        <li>选择你的提供商,粘贴 <strong>API Key</strong>,再选一个<strong>模型</strong>(填好 Key 后模型列表会自动加载)。</li>
+        <li>点<strong>测试连接</strong>,显示成功后点<strong>保存</strong>。</li>
+        <li>回到列表,点一下这份配置让它生效(出现绿色勾)。</li>
+      </ol>
+      <p class="tip">Key 存在 iOS 系统钥匙串里,只会发往你自己配置的服务商。调用费用由服务商收取,与我们无关。</p>
+
+      <h2>6. 同步和备份</h2>
+      <ul>
+        <li><strong>多设备同步</strong>——知识库会通过你自己的 iCloud 私有数据库自动同步。也可以在<strong>设置 → iCloud 同步</strong>里点<strong>立即同步(全量)</strong>。注意:AI 配置不会同步,每台设备单独设置。</li>
+        <li><strong>导出备份</strong>——在设置里点<strong>导出 Markdown 到 iCloud Drive</strong>,全部笔记会变成普通 Markdown 文件。你的知识永远不被锁定。</li>
+      </ul>
+
+      <h2>常见问题</h2>
+      <ul class="card-list">
+        <li><strong>需要注册账号吗?</strong><p>不用,打开 App 直接用。</p></li>
+        <li><strong>离线能用吗?</strong><p>浏览、搜索、收集都可以离线。云端 AI 回答需要联网;本机 AI(Apple Intelligence)不需要。</p></li>
+        <li><strong>开发者能看到我的笔记吗?</strong><p>不能。数据在你的设备和你自己的 iCloud 私有数据库里,开发者无权访问。</p></li>
+        <li><strong>API Key 安全吗?</strong><p>存在系统钥匙串,只发往你选择的服务商。</p></li>
+        <li><strong>支持哪些界面语言?</strong><p>English、简体中文、繁體中文、日本語,跟随 iPhone 系统语言。</p></li>
+      </ul>
+
+      <p>还有问题?发邮件到 <a href="mailto:info@pixelart.tech">info@pixelart.tech</a>。</p>
+    </section>
+
+    <section data-lang-panel="zh-Hant" hidden>
+      <h1>新手使用教學</h1>
+      <p class="meta">不用註冊帳號,五分鐘就能上手。</p>
+
+      <h2>1. 第一次打開:認識四個標籤頁</h2>
+      <p>KnowledgeBrain 裝好後直接就能用,不需要註冊。底部有四個標籤:</p>
+      <ul>
+        <li><strong>問答</strong>——和你的知識庫聊天。</li>
+        <li><strong>收集</strong>——把新內容放進來。</li>
+        <li><strong>庫</strong>——瀏覽和搜尋你存過的所有內容。</li>
+        <li><strong>設定</strong>——AI 提供方、iCloud 同步、匯出。</li>
+      </ul>
+
+      <h2>2. 把內容放進來(收集)</h2>
+      <div class="shots">
+        <img class="guide" src="screenshots/zh-Hant/04-capture.png" alt="收集標籤頁" loading="lazy">
+      </div>
+      <p>打開<strong>收集</strong>標籤,哪種方便用哪種:</p>
+      <ol>
+        <li><strong>打字記錄</strong>——在頂部「快速記錄」框裡寫,寫完點<strong>儲存</strong>。</li>
+        <li><strong>語音速記</strong>——點<strong>開始錄音</strong>,說完點停止。語音會自動在手機上轉成文字。</li>
+        <li><strong>匯入檔案</strong>——點<strong>檔案 (PDF/EPUB/MD/TXT)</strong>,從「檔案」App 裡選文件,適合論文和電子書。</li>
+        <li><strong>圖片識字(OCR)</strong>——點<strong>相簿圖片 (OCR)</strong>,把照片裡的文字變成可搜尋的筆記。</li>
+        <li><strong>Obsidian 用戶</strong>——點<strong>Obsidian Vault 資料夾</strong>,整個庫一次匯入。</li>
+        <li><strong>從別的 App 收藏</strong>——在 Safari 或任何 App 裡點系統<strong>分享</strong>按鈕,選 <strong>KnowledgeBrain</strong>,一鍵儲存。</li>
+      </ol>
+      <p class="tip">存進來的內容會自動產生摘要、打上標籤並建立搜尋索引。只管往裡收,剩下的交給它。</p>
+
+      <h2>3. 開口提問(問答)</h2>
+      <div class="shots">
+        <img class="guide" src="screenshots/zh-Hant/03-chat.png" alt="向知識庫提問" loading="lazy">
+        <img class="guide" src="screenshots/zh-Hant/06-citation-detail.png" alt="點引用標記可查看原文" loading="lazy">
+      </div>
+      <ol>
+        <li>打開<strong>問答</strong>標籤,在底部輸入框裡寫下你的問題——大白話就行。</li>
+        <li>答案是基於<strong>你自己的</strong>知識庫產生的。每個答案末尾都有 <strong>[1] RAG 技術調研</strong> 這樣的來源標記。</li>
+        <li>點一下來源標記,就能看到答案依據的原文段落——隨時可以核對。</li>
+        <li>答案下方的喇叭圖示可以朗讀,旁邊的圖示可以複製。</li>
+      </ol>
+
+      <h2>4. 找東西(庫)</h2>
+      <p><strong>庫</strong>標籤裡列出了你存的所有內容。頂部的搜尋框是<strong>語義搜尋</strong>:輸入大概意思(比如「那篇講資料庫的文章」)就能找到,不用記住原話。點任意條目可以看全文。</p>
+
+      <h2>5. 可選:接入雲端 AI(自己的 API Key)</h2>
+      <p>在支援 Apple Intelligence 的裝置上,答案可以完全在本機產生,這步可以跳過。其他情況,或者想要更強的回答,可以接入自己的 Key:</p>
+      <ol>
+        <li>先去服務商官網申請一個 API Key(比如 DeepSeek、智譜、Kimi——可以理解成調用他們 AI 服務的密碼)。</li>
+        <li>在 KnowledgeBrain 裡進入<strong>設定 → 雲端 API → 加入設定</strong>。</li>
+        <li>選擇你的提供商,貼上 <strong>API Key</strong>,再選一個<strong>模型</strong>(填好 Key 後模型列表會自動載入)。</li>
+        <li>點<strong>測試連線</strong>,顯示成功後點<strong>儲存</strong>。</li>
+        <li>回到列表,點一下這份設定讓它生效(出現綠色勾)。</li>
+      </ol>
+      <p class="tip">Key 存在 iOS 系統鑰匙圈裡,只會發往你自己設定的服務商。調用費用由服務商收取,與我們無關。</p>
+
+      <h2>6. 同步和備份</h2>
+      <ul>
+        <li><strong>多裝置同步</strong>——知識庫會透過你自己的 iCloud 私有資料庫自動同步。也可以在<strong>設定 → iCloud 同步</strong>裡點<strong>立即同步(全量)</strong>。注意:AI 設定不會同步,每台裝置單獨設定。</li>
+        <li><strong>匯出備份</strong>——在設定裡點<strong>匯出 Markdown 到 iCloud Drive</strong>,全部筆記會變成普通 Markdown 檔案。你的知識永遠不被鎖定。</li>
+      </ul>
+
+      <h2>常見問題</h2>
+      <ul class="card-list">
+        <li><strong>需要註冊帳號嗎?</strong><p>不用,打開 App 直接用。</p></li>
+        <li><strong>離線能用嗎?</strong><p>瀏覽、搜尋、收集都可以離線。雲端 AI 回答需要連網;本機 AI(Apple Intelligence)不需要。</p></li>
+        <li><strong>開發者能看到我的筆記嗎?</strong><p>不能。資料在你的裝置和你自己的 iCloud 私有資料庫裡,開發者無權存取。</p></li>
+        <li><strong>API Key 安全嗎?</strong><p>存在系統鑰匙圈,只發往你選擇的服務商。</p></li>
+        <li><strong>支援哪些介面語言?</strong><p>English、简体中文、繁體中文、日本語,跟隨 iPhone 系統語言。</p></li>
+      </ul>
+
+      <p>還有問題?寄信到 <a href="mailto:info@pixelart.tech">info@pixelart.tech</a>。</p>
+    </section>
+
+    <section data-lang-panel="ja" hidden>
+      <h1>初心者ガイド</h1>
+      <p class="meta">アカウント登録は不要。5分で使いこなせます。</p>
+
+      <h2>1. 初めて開いたら:4つのタブ</h2>
+      <p>KnowledgeBrain はインストール後すぐ使えます。登録は不要です。下部に4つのタブがあります:</p>
+      <ul>
+        <li><strong>質問</strong>——知識ベースと会話します。</li>
+        <li><strong>取り込み</strong>——新しいコンテンツを入れます。</li>
+        <li><strong>ライブラリ</strong>——保存したすべてを閲覧・検索します。</li>
+        <li><strong>設定</strong>——AI プロバイダー、iCloud 同期、エクスポート。</li>
+      </ul>
+
+      <h2>2. コンテンツを入れる(取り込み)</h2>
+      <div class="shots">
+        <img class="guide" src="screenshots/ja/04-capture.png" alt="取り込みタブ" loading="lazy">
+      </div>
+      <p><strong>取り込み</strong>タブを開いて、好きな方法を選びます:</p>
+      <ol>
+        <li><strong>テキストメモ</strong>——上部の「クイックメモ」欄に書いて、<strong>保存</strong>をタップ。</li>
+        <li><strong>音声メモ</strong>——<strong>録音開始</strong>をタップして話し、停止をタップ。音声は iPhone 上で自動的に文字起こしされます。</li>
+        <li><strong>ファイル</strong>——<strong>ファイル (PDF/EPUB/MD/TXT)</strong> をタップし、「ファイル」App から書類を選択。論文や電子書籍に最適です。</li>
+        <li><strong>写真の文字(OCR)</strong>——<strong>フォトライブラリ (OCR)</strong> をタップすると、写真内の文字が検索可能なノートになります。</li>
+        <li><strong>Obsidian</strong>——<strong>Obsidian Vault フォルダ</strong> をタップして、既存の Vault をまとめて読み込めます。</li>
+        <li><strong>他のアプリから</strong>——Safari などでシステムの<strong>共有</strong>ボタンをタップし、<strong>KnowledgeBrain</strong> を選択。ワンタップで保存できます。</li>
+      </ol>
+      <p class="tip">保存した内容は自動で要約・タグ付け・検索インデックス化されます。どんどん集めるだけでOKです。</p>
+
+      <h2>3. 質問する(質問タブ)</h2>
+      <div class="shots">
+        <img class="guide" src="screenshots/ja/03-chat.png" alt="知識ベースに質問する" loading="lazy">
+        <img class="guide" src="screenshots/ja/06-citation-detail.png" alt="引用をタップすると原文が表示される" loading="lazy">
+      </div>
+      <ol>
+        <li><strong>質問</strong>タブを開き、下部の入力欄に質問を書きます——普段の言葉で大丈夫です。</li>
+        <li>回答は<strong>あなた自身の</strong>知識ベースから生成されます。回答の末尾には <strong>[1] RAG 調査メモ</strong> のような引用チップが付きます。</li>
+        <li>チップをタップすると、回答の根拠となった原文の箇所が表示されます——いつでも確認できます。</li>
+        <li>スピーカーアイコンで読み上げ、隣のアイコンでコピーできます。</li>
+      </ol>
+
+      <h2>4. 探す(ライブラリ)</h2>
+      <p><strong>ライブラリ</strong>タブには保存したすべてが並びます。上部の検索ボックスは<strong>セマンティック検索</strong>:おおまかな意味(例:「データベースについての記事」)を入力するだけで見つかります。正確な言葉を覚えている必要はありません。項目をタップすると全文を読めます。</p>
+
+      <h2>5. 任意:クラウド AI を接続(自分の API キー)</h2>
+      <p>Apple Intelligence 搭載デバイスでは回答を完全にオンデバイスで生成できるので、この手順は不要です。それ以外の場合や、より高性能な回答が欲しい場合は、自分のキーを接続できます:</p>
+      <ol>
+        <li>まずプロバイダーの公式サイトで API キーを取得します(DeepSeek、Zhipu、Kimi など——AI サービスを使うためのパスワードのようなものです)。</li>
+        <li>KnowledgeBrain で<strong>設定 → クラウド API → 設定を追加</strong>を開きます。</li>
+        <li>プロバイダーを選び、<strong>API キー</strong>を貼り付け、<strong>モデル</strong>を選びます(キーを入れるとモデル一覧が自動で読み込まれます)。</li>
+        <li><strong>接続テスト</strong>をタップし、成功と表示されたら<strong>保存</strong>。</li>
+        <li>一覧に戻り、その設定をタップして有効にします(緑のチェックが付きます)。</li>
+      </ol>
+      <p class="tip">キーは iOS キーチェーンに保存され、設定したプロバイダーにだけ送信されます。利用料金はプロバイダーからの請求で、私どもは関与しません。</p>
+
+      <h2>6. 同期とバックアップ</h2>
+      <ul>
+        <li><strong>デバイス間同期</strong>——ライブラリはあなたのプライベートな iCloud データベースを通じて自動同期されます。<strong>設定 → iCloud 同期</strong>の<strong>今すぐ同期(全量)</strong>も使えます。なお、AI 設定は同期されないので、デバイスごとに設定してください。</li>
+        <li><strong>エクスポート/バックアップ</strong>——設定の<strong>Markdown を iCloud Drive にエクスポート</strong>をタップすると、全ノートが通常の Markdown ファイルになります。知識がロックインされることはありません。</li>
+      </ul>
+
+      <h2>よくある質問</h2>
+      <ul class="card-list">
+        <li><strong>アカウントは必要?</strong><p>不要です。アプリを開いてすぐ使えます。</p></li>
+        <li><strong>オフラインで使える?</strong><p>閲覧・検索・取り込みはオフラインで動作します。クラウド AI の回答には通信が必要ですが、オンデバイス AI(Apple Intelligence)は不要です。</p></li>
+        <li><strong>開発者にノートを見られる?</strong><p>いいえ。データはあなたのデバイスとプライベートな iCloud データベースにあり、開発者はアクセスできません。</p></li>
+        <li><strong>API キーは安全?</strong><p>システムのキーチェーンに保存され、選択したプロバイダーにだけ送信されます。</p></li>
+        <li><strong>対応言語は?</strong><p>English、简体中文、繁體中文、日本語——iPhone の言語設定に従います。</p></li>
+      </ul>
+
+      <p>まだ困っていますか?<a href="mailto:info@pixelart.tech">info@pixelart.tech</a> までメールしてください。</p>
+    </section>
+
+    <footer>© 2026 pixelart.tech · <a href="mailto:info@pixelart.tech">info@pixelart.tech</a></footer>
+  </main>
+  <script src="lang.js"></script>
+</body>
+</html>

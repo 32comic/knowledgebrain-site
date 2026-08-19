@@ -84,3 +84,63 @@ footer {
   font-size: 0.9rem;
 }
 [hidden] { display: none !important; }
+
+/* product intro & guide pages */
+.hero { padding: 0.5rem 0 0; }
+.hero h1 { font-size: 2rem; margin-bottom: 0.15rem; }
+.tagline { font-size: 1.15rem; font-weight: 650; margin: 0 0 0.5rem; }
+.lede { color: var(--muted); margin: 0 0 0.75rem; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.5rem 0 1rem; }
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.btn.secondary {
+  background: var(--card);
+  color: var(--accent);
+  border: 1px solid var(--line);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.75rem;
+}
+.feature {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+}
+.feature h3 { margin: 0 0 0.3rem; font-size: 1rem; }
+.feature p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+.shots {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding: 0.25rem 0 0.5rem;
+}
+.shots img {
+  height: 26rem;
+  max-width: none;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+.shots img.guide { height: 22rem; }
+.tip {
+  background: #eef4ff;
+  border: 1px solid #d6e4ff;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  font-size: 0.95rem;
+}
+@media (max-width: 40rem) {
+  .shots img { height: 20rem; }
+  .shots img.guide { height: 17rem; }
+}

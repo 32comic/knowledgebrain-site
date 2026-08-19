@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KnowledgeBrain</title>
+  <title>KnowledgeBrain — Local-first AI second brain</title>
+  <meta name="description" content="KnowledgeBrain is a local-first personal knowledge base for iOS: capture everything, ask your library questions, get answers with citations.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,6 +12,7 @@
     <div class="wrap brand">
       <a href="index.html">KnowledgeBrain</a>
       <nav class="nav">
+        <a href="guide.html">Guide</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
       </nav>
@@ -25,46 +27,230 @@
     </div>
 
     <section data-lang-panel="en">
-      <h1>KnowledgeBrain legal</h1>
-      <p class="meta">pixelart.tech · Contact: <a href="mailto:info@pixelart.tech">info@pixelart.tech</a></p>
-      <p>Local-first personal knowledge base for iOS. These pages are the official Privacy Policy and Terms of Use for App Store listing and support.</p>
+      <div class="hero">
+        <h1>KnowledgeBrain</h1>
+        <p class="tagline">Your local-first AI second brain</p>
+        <p class="lede">Collect text, voice memos, PDFs, e-books and web clippings into one searchable knowledge base — then just ask it questions. Every answer comes with citations you can trace back to the source. Your data lives on your devices and in your own iCloud, nowhere else.</p>
+        <p class="cta-row">
+          <a class="btn" href="guide.html?lang=en">How to use →</a>
+          <a class="btn secondary" href="privacy.html?lang=en">Privacy Policy</a>
+        </p>
+      </div>
+
+      <h2>What it does</h2>
+      <div class="grid">
+        <div class="feature">
+          <h3>Capture everything</h3>
+          <p>Quick text notes, voice memos (transcribed on-device), PDF / EPUB / Markdown import, photo OCR, Obsidian vault import, and one-tap saving from any app via the share sheet.</p>
+        </div>
+        <div class="feature">
+          <h3>Ask, don't dig</h3>
+          <p>Ask questions in plain language. Answers are built from your own library, with [1] [2] citation chips you can tap to read the original passage.</p>
+        </div>
+        <div class="feature">
+          <h3>Private by design</h3>
+          <p>Vector search, speech transcription and OCR all run on your device. On devices with Apple Intelligence, answers can be generated entirely on-device too.</p>
+        </div>
+        <div class="feature">
+          <h3>Bring your own key</h3>
+          <p>Connect DeepSeek, Zhipu, Kimi, OpenRouter and more with your own API key. Keys stay in the iOS Keychain and go only to the provider you choose.</p>
+        </div>
+        <div class="feature">
+          <h3>Finds by meaning</h3>
+          <p>Semantic search finds notes by what they mean, not just exact keywords. AI-generated summaries and tags keep a growing library tidy.</p>
+        </div>
+        <div class="feature">
+          <h3>Yours, synced, exportable</h3>
+          <p>iCloud syncs your library across devices through your private database. One tap exports everything as Markdown to iCloud Drive — never locked in.</p>
+        </div>
+      </div>
+
+      <h2>Screenshots</h2>
+      <div class="shots">
+        <img src="screenshots/en/03-chat.png" alt="Ask your knowledge base questions and get answers with citations" loading="lazy">
+        <img src="screenshots/en/01-library.png" alt="Library with semantic search" loading="lazy">
+        <img src="screenshots/en/04-capture.png" alt="Capture: quick note, voice memo, import files" loading="lazy">
+      </div>
+
+      <h2>No account, no tracking</h2>
+      <p>There is no sign-up, no analytics, no ads. Your knowledge base exists only on your devices and in your private iCloud database — the developer cannot see it. Read the <a href="privacy.html?lang=en">Privacy Policy</a> for details.</p>
+
       <ul class="card-list">
+        <li><a href="guide.html?lang=en">Beginner's guide</a><p>Step-by-step: capture, ask, search, set up an API key, sync and export.</p></li>
         <li><a href="privacy.html?lang=en">Privacy Policy</a><p>What we do not collect, where your data lives, optional BYOK.</p></li>
         <li><a href="terms.html?lang=en">Terms of Use</a><p>License, purchases, your content, and optional cloud AI.</p></li>
       </ul>
     </section>
 
     <section data-lang-panel="zh-Hans" hidden>
-      <h1>KnowledgeBrain 法律信息</h1>
-      <p class="meta">pixelart.tech · 联系：<a href="mailto:info@pixelart.tech">info@pixelart.tech</a></p>
-      <p>面向 iOS 的本地优先个人知识库。本站为 App Store 上架与用户支持所用的正式隐私政策与使用条款。</p>
+      <div class="hero">
+        <h1>KnowledgeBrain</h1>
+        <p class="tagline">本地优先的 AI 第二大脑</p>
+        <p class="lede">把散落的文字、语音、PDF、电子书和网页剪藏收进一个可搜索的知识库,然后直接开口提问。每个答案都附带引用来源,可以点回原文核对。数据只存在你的设备和你自己的 iCloud 里。</p>
+        <p class="cta-row">
+          <a class="btn" href="guide.html?lang=zh-Hans">新手使用教学 →</a>
+          <a class="btn secondary" href="privacy.html?lang=zh-Hans">隐私政策</a>
+        </p>
+      </div>
+
+      <h2>主要功能</h2>
+      <div class="grid">
+        <div class="feature">
+          <h3>什么都能存</h3>
+          <p>快速文字记录、语音速记(本机转写)、PDF / EPUB / Markdown 导入、相册图片 OCR、Obsidian 库导入,还能通过系统分享面板从任何 App 一键收藏。</p>
+        </div>
+        <div class="feature">
+          <h3>直接问,不用翻</h3>
+          <p>用大白话提问,答案基于你自己的知识库生成,末尾的 [1] [2] 引用标记点一下就能看到原文出处。</p>
+        </div>
+        <div class="feature">
+          <h3>隐私优先</h3>
+          <p>向量检索、语音转写、OCR 全部在设备本地完成;在支持 Apple Intelligence 的设备上,连答案生成都可以完全不离机。</p>
+        </div>
+        <div class="feature">
+          <h3>用自己的 Key</h3>
+          <p>支持 DeepSeek、智谱、Kimi、OpenRouter 等,用你自己的 API Key 和额度。Key 存在系统钥匙串,只发往你配置的服务商。</p>
+        </div>
+        <div class="feature">
+          <h3>按意思找东西</h3>
+          <p>语义搜索按含义找笔记,不需要记住精确关键词;AI 自动生成的摘要和标签让知识库越攒越好找。</p>
+        </div>
+        <div class="feature">
+          <h3>同步自由,导出自由</h3>
+          <p>通过你的 iCloud 私有数据库跨设备同步;一键把全部内容导出为 Markdown 到 iCloud Drive,永远不被锁定。</p>
+        </div>
+      </div>
+
+      <h2>界面截图</h2>
+      <div class="shots">
+        <img src="screenshots/zh-Hans/03-chat.png" alt="向知识库提问,答案附引用来源" loading="lazy">
+        <img src="screenshots/zh-Hans/01-library.png" alt="知识库列表与语义搜索" loading="lazy">
+        <img src="screenshots/zh-Hans/04-capture.png" alt="收集:快速记录、语音速记、导入文件" loading="lazy">
+      </div>
+
+      <h2>不注册、不追踪</h2>
+      <p>不需要账号,没有统计埋点,没有广告。你的知识库只存在于你的设备和你的 iCloud 私有数据库,开发者无法查看。详见<a href="privacy.html?lang=zh-Hans">隐私政策</a>。</p>
+
       <ul class="card-list">
+        <li><a href="guide.html?lang=zh-Hans">新手使用教学</a><p>一步步教你:存内容、提问、搜索、配置 API Key、同步与导出。</p></li>
         <li><a href="privacy.html?lang=zh-Hans">隐私政策</a><p>我们不收集什么、数据存在哪里、可选的自带 Key。</p></li>
-        <li><a href="terms.html?lang=zh-Hans">使用条款</a><p>许可、购买、你的内容，以及可选的云端 AI。</p></li>
+        <li><a href="terms.html?lang=zh-Hans">使用条款</a><p>许可、购买、你的内容,以及可选的云端 AI。</p></li>
       </ul>
     </section>
 
     <section data-lang-panel="zh-Hant" hidden>
-      <h1>KnowledgeBrain 法律資訊</h1>
-      <p class="meta">pixelart.tech · 聯絡：<a href="mailto:info@pixelart.tech">info@pixelart.tech</a></p>
-      <p>適用於 iOS 的本地優先個人知識庫。本站為 App Store 上架與使用者支援所用的正式隱私權政策與使用條款。</p>
+      <div class="hero">
+        <h1>KnowledgeBrain</h1>
+        <p class="tagline">本地優先的 AI 第二大腦</p>
+        <p class="lede">把散落的文字、語音、PDF、電子書和網頁剪藏收進一個可搜尋的知識庫,然後直接開口提問。每個答案都附帶引用來源,可以點回原文核對。資料只存在你的裝置和你自己的 iCloud 裡。</p>
+        <p class="cta-row">
+          <a class="btn" href="guide.html?lang=zh-Hant">新手使用教學 →</a>
+          <a class="btn secondary" href="privacy.html?lang=zh-Hant">隱私權政策</a>
+        </p>
+      </div>
+
+      <h2>主要功能</h2>
+      <div class="grid">
+        <div class="feature">
+          <h3>什麼都能存</h3>
+          <p>快速文字記錄、語音速記(本機轉寫)、PDF / EPUB / Markdown 匯入、相簿圖片 OCR、Obsidian 庫匯入,還能透過系統分享面板從任何 App 一鍵收藏。</p>
+        </div>
+        <div class="feature">
+          <h3>直接問,不用翻</h3>
+          <p>用大白話提問,答案基於你自己的知識庫產生,末尾的 [1] [2] 引用標記點一下就能看到原文出處。</p>
+        </div>
+        <div class="feature">
+          <h3>隱私優先</h3>
+          <p>向量檢索、語音轉寫、OCR 全部在裝置本地完成;在支援 Apple Intelligence 的裝置上,連答案產生都可以完全不離機。</p>
+        </div>
+        <div class="feature">
+          <h3>用自己的 Key</h3>
+          <p>支援 DeepSeek、智譜、Kimi、OpenRouter 等,用你自己的 API Key 和額度。Key 存在系統鑰匙圈,只發往你設定的服務商。</p>
+        </div>
+        <div class="feature">
+          <h3>按意思找東西</h3>
+          <p>語義搜尋按含義找筆記,不需要記住精確關鍵字;AI 自動產生的摘要和標籤讓知識庫越攢越好找。</p>
+        </div>
+        <div class="feature">
+          <h3>同步自由,匯出自由</h3>
+          <p>透過你的 iCloud 私有資料庫跨裝置同步;一鍵把全部內容匯出為 Markdown 到 iCloud Drive,永遠不被鎖定。</p>
+        </div>
+      </div>
+
+      <h2>介面截圖</h2>
+      <div class="shots">
+        <img src="screenshots/zh-Hant/03-chat.png" alt="向知識庫提問,答案附引用來源" loading="lazy">
+        <img src="screenshots/zh-Hant/01-library.png" alt="知識庫列表與語義搜尋" loading="lazy">
+        <img src="screenshots/zh-Hant/04-capture.png" alt="收集:快速記錄、語音速記、匯入檔案" loading="lazy">
+      </div>
+
+      <h2>不註冊、不追蹤</h2>
+      <p>不需要帳號,沒有統計埋點,沒有廣告。你的知識庫只存在於你的裝置和你的 iCloud 私有資料庫,開發者無法查看。詳見<a href="privacy.html?lang=zh-Hant">隱私權政策</a>。</p>
+
       <ul class="card-list">
+        <li><a href="guide.html?lang=zh-Hant">新手使用教學</a><p>一步步教你:存內容、提問、搜尋、設定 API Key、同步與匯出。</p></li>
         <li><a href="privacy.html?lang=zh-Hant">隱私權政策</a><p>我們不收集什麼、資料存在哪裡、可選的自備金鑰。</p></li>
-        <li><a href="terms.html?lang=zh-Hant">使用條款</a><p>授權、購買、你的內容，以及可選的雲端 AI。</p></li>
+        <li><a href="terms.html?lang=zh-Hant">使用條款</a><p>授權、購買、你的內容,以及可選的雲端 AI。</p></li>
       </ul>
     </section>
 
     <section data-lang-panel="ja" hidden>
-      <h1>KnowledgeBrain 法的情報</h1>
-      <p class="meta">pixelart.tech · 連絡先: <a href="mailto:info@pixelart.tech">info@pixelart.tech</a></p>
-      <p>iOS 向けのローカルファーストな個人ナレッジベースです。本サイトは App Store 掲載およびサポート用の公式プライバシーポリシーと利用規約です。</p>
+      <div class="hero">
+        <h1>KnowledgeBrain</h1>
+        <p class="tagline">ローカルファーストな AI セカンドブレイン</p>
+        <p class="lede">散らばったテキスト、音声、PDF、電子書籍、Web クリップを一つの検索できる知識ベースに集めて、そのまま質問できます。すべての回答には原文に遡れる引用が付きます。データはあなたのデバイスと自分の iCloud にだけ保存されます。</p>
+        <p class="cta-row">
+          <a class="btn" href="guide.html?lang=ja">使い方ガイド →</a>
+          <a class="btn secondary" href="privacy.html?lang=ja">プライバシーポリシー</a>
+        </p>
+      </div>
+
+      <h2>主な機能</h2>
+      <div class="grid">
+        <div class="feature">
+          <h3>何でも取り込める</h3>
+          <p>テキストメモ、音声メモ(オンデバイスで文字起こし)、PDF / EPUB / Markdown の読み込み、写真 OCR、Obsidian Vault の読み込み、共有シートから他アプリの内容をワンタップ保存。</p>
+        </div>
+        <div class="feature">
+          <h3>探すより、聞く</h3>
+          <p>自然な言葉で質問するだけ。回答はあなたの知識ベースから生成され、末尾の [1] [2] の引用チップをタップすれば原文の該当箇所を確認できます。</p>
+        </div>
+        <div class="feature">
+          <h3>プライバシー第一</h3>
+          <p>ベクトル検索、音声認識、OCR はすべてデバイス上で動作。Apple Intelligence 搭載デバイスでは回答生成まで完全にオンデバイスで行えます。</p>
+        </div>
+        <div class="feature">
+          <h3>自分の API キーで</h3>
+          <p>DeepSeek、Zhipu、Kimi、OpenRouter などに自分のキーで接続。キーは iOS キーチェーンに保存され、設定したプロバイダーにだけ送信されます。</p>
+        </div>
+        <div class="feature">
+          <h3>意味で見つかる</h3>
+          <p>セマンティック検索はキーワードではなく意味でノートを探します。AI が生成する要約とタグで、増え続けるライブラリも整理されたまま。</p>
+        </div>
+        <div class="feature">
+          <h3>同期もエクスポートも自由</h3>
+          <p>プライベートな iCloud データベースでデバイス間同期。ワンタップで全内容を Markdown として iCloud Drive にエクスポート — ロックインはありません。</p>
+        </div>
+      </div>
+
+      <h2>スクリーンショット</h2>
+      <div class="shots">
+        <img src="screenshots/ja/03-chat.png" alt="知識ベースに質問し、引用付きの回答を得る" loading="lazy">
+        <img src="screenshots/ja/01-library.png" alt="ライブラリとセマンティック検索" loading="lazy">
+        <img src="screenshots/ja/04-capture.png" alt="取り込み:メモ、音声、ファイル読み込み" loading="lazy">
+      </div>
+
+      <h2>アカウント不要、トラッキングなし</h2>
+      <p>サインアップも分析も広告もありません。知識ベースはあなたのデバイスとプライベートな iCloud データベースにのみ存在し、開発者は閲覧できません。詳しくは<a href="privacy.html?lang=ja">プライバシーポリシー</a>をご覧ください。</p>
+
       <ul class="card-list">
+        <li><a href="guide.html?lang=ja">初心者ガイド</a><p>取り込み、質問、検索、API キー設定、同期とエクスポートを順番に解説。</p></li>
         <li><a href="privacy.html?lang=ja">プライバシーポリシー</a><p>収集しないデータ、保存場所、任意の BYOK。</p></li>
         <li><a href="terms.html?lang=ja">利用規約</a><p>ライセンス、購入、コンテンツ、任意のクラウド AI。</p></li>
       </ul>
     </section>
 
-    <footer>© 2026 pixelart.tech</footer>
+    <footer>© 2026 pixelart.tech · <a href="mailto:info@pixelart.tech">info@pixelart.tech</a></footer>
   </main>
   <script src="lang.js"></script>
 </body>
